@@ -17,5 +17,5 @@ app.get('/login',(req, res)=> {
 });
 
 app.listen(3030, ()=>{
-    console.log('Servidor corriendo')
+    console.log('Servidor corriendo en el puerto 3030')
 });
