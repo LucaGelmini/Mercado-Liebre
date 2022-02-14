@@ -1,0 +1,23 @@
+{
+  "name": "mercadoliebre",
+  "version": "1.0.0",
+  "description": "Ejercicio del curso de desarrollo FullStack de Digital House. Ejercicio de página de ECommerce",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucaGelmini/ejercicio-DH.git"
+  },
+  "author": "Luko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucaGelmini/ejercicio-DH/issues"
+  },
+  "homepage": "https://github.com/LucaGelmini/ejercicio-DH#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
