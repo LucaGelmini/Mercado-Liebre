@@ -7,6 +7,9 @@ body{
 }
 p {font-size: 12;}
 header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     position: fixed;
     top: 0;
     background-color: #EAC926;
@@ -73,6 +76,7 @@ header .buscador{
 .burger-menu{
     text-align: center;
     align-items: center;
+    margin: auto;
 }
 
 .burger-menu button{
@@ -368,6 +372,7 @@ input[type="file"]::-webkit-file-upload-button{
     .header-1{
         display: flex;
         align-items: center;
+        width: 100%;
         margin: 0px 0px 10px 0px
     }
     .logo-y-buscador{
@@ -378,12 +383,13 @@ input[type="file"]::-webkit-file-upload-button{
     }*/
     .anuncio-header{
         margin: 0px 0px 0px 10px;
-        max-width: 35%;
-        text-align: right;
+        text-align: center;
+        margin: auto;
     }
     .header-nav{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     .header-nav ul{
         display: flex;
@@ -433,6 +439,9 @@ input[type="file"]::-webkit-file-upload-button{
 @media (min-width: 769px) {
     header{
         padding: 15px 35px;
+    }
+    .logo-y-buscador{
+        width: 65%;
     }
     .buscador{
         width: 60%;
