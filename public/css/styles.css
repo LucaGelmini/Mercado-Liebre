@@ -160,6 +160,7 @@ main article{
     position: absolute;
     right: 20px;
     top: -15px;
+    z-index: 15;
 }
 
 .precios, .descuentos{
@@ -249,12 +250,14 @@ form{
     flex-direction: column;
     margin: 25px 0 25px 0;
     width: 100%;
+    
 }
 
 
-.info-article i:hover{
+.precio-y-descuento i:hover{
     transform: rotate(-90deg);
     transition: transform 1s;
+    
 }
 
 main article:hover, .categoria-int :hover{
@@ -375,18 +378,22 @@ footer i:hover{
     
     .header-1{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         width: 100%;
         margin: 0px 0px 10px 0px
     }
     .logo-y-buscador{
-        justify-content:space-between
+        justify-content:space-between;
+        margin-bottom: 10px;
     }
-    /*.info-article h3{
-        display: block;
-    }*/
+ 
+    header .buscador {
+        margin: 0px 0px 0px 0px;
+    }
+
     .anuncio-header{
-        margin: 0px 0px 0px 10px;
+        margin: 10px 0px 0px 0px;
         text-align: center;
         margin: auto;
     }
@@ -512,8 +519,5 @@ footer i:hover{
     }
     form{
         width: 690px;
-    }
-    .caja-descripciones{
-        height: 33%;
     }
 }
