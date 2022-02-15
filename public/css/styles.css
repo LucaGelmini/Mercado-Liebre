@@ -376,7 +376,7 @@ input[type="file"]::-webkit-file-upload-button{
         margin: 0px 0px 10px 0px
     }
     .logo-y-buscador{
-        justify-content:flex-start
+        justify-content:space-between
     }
     /*.info-article h3{
         display: block;
@@ -440,11 +440,24 @@ input[type="file"]::-webkit-file-upload-button{
     header{
         padding: 15px 35px;
     }
-    .logo-y-buscador{
-        width: 65%;
+    .header-1{
+        width: 50%
     }
-    .buscador{
-        width: 60%;
+    header .anuncio-header{
+        width: 35%;
+        text-align: right;
+        margin: 0 10px;
+        align-self: center;
+    }
+    header .logo img{
+        max-height: 45px;
+    }
+
+    .logo-y-buscador{
+        width: 100%;
+    }
+    header .buscador{
+        width: 70%;
     }
     .burger-menu{
         display: none;
