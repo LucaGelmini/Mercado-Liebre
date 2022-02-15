@@ -50,14 +50,14 @@
         
         <main>
             <form method="GET" name= "formulario-registro">
-                <input class="input-texto" type="text" name="nombre" placeholder="Nombre/s y apellido/s">
-                <input class="input-texto" type="text" name="user-name" placeholder="Nombre de usuario">
-                <input class="input-texto" type="email" name="email" placeholder="Correo electrónico">
+                <input class="input-texto" type="text" name="nombre" placeholder="Nombre/s y apellido/s"required/>
+                <input class="input-texto" type="text" name="user-name" placeholder="Nombre de usuario"required/>
+                <input class="input-texto" type="email" name="email" placeholder="Correo electrónico"required/>
 
                 <label class="label-header" for="b-date">Fecha de nacimiento: </label>
                 <input class="input-texto" type="date" name="b-date">
 
-                <input class="input-texto" type="text" name="direccion" placeholder="Dirección">
+                <input class="input-texto" type="text" name="direccion" placeholder="Dirección"required/>
 
                 <label class="label-header">Perfil del usuario</label>
                 <div class="perfil-usr">
@@ -99,8 +99,8 @@
                 <div class="img-perfil">
                     <input type="file" name="avatar" accept=".jpg, .png">
                 </div>
-                <input class="input-texto" type="password"  placeholder="Contraseña">
-                <input class="input-texto" type="password"  placeholder="Confirmar contraseña">
+                <input class="input-texto" type="password"  placeholder="Contraseña"required/>
+                <input class="input-texto" type="password"  placeholder="Confirmar contraseña"required/>
                 <div class="botones-register">
                     <button type="submit"><a href="/">Enviar</a></button>
                     <button type="reset">Borrar</button>
