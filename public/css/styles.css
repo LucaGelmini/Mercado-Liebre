@@ -367,6 +367,10 @@ input[type="file"]::-webkit-file-upload-button{
     color: white;
 }
 
+footer i:hover{
+    color: #03264C;
+}
+
 @media (min-width: 361px) {
     
     .header-1{
