@@ -307,23 +307,45 @@ main article:hover, .categoria-int :hover{
     margin-top: 15px;
 }
 
-.img-perfil {
-    margin: 15px 0 15px 0;
-    /*margin: auto;*/
-    
-}
-.img-perfil input{
+.subir-imagen-container{
+    width: 200px;
+    height: 250px;
+    margin: auto ;
+    margin-top: 25px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+
 }
-input[type="file"]::-webkit-file-upload-button{
-    background-color: #39b54a;
-    height: 30px;
+.preview-user{
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+.upload-profile-pic-button{
+    display: flex;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #89cd4d;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    bottom: 50px;
+    max-width: none;
+    
 }
-
+.input-usr-img{
+    width: 0;
+    height: 0;
+}
 .botones-register{
     
     margin-top: 10px;

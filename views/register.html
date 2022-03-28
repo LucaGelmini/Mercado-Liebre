@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="./public/css/styles.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 
+        <script type="text/javascript" src="./public/js/index.js"></script>
+
     </head>
     <body>
         <header>
@@ -49,7 +51,16 @@
         </header>
         
         <main>
-            <form method="GET" name= "formulario-registro">
+            <form method="POST" name= "formulario-registro">
+
+                <div class="subir-imagen-container">           
+                    <img alt="Foto de perfil" id="preview-user" class="preview-user" src= './public/img/default-usr.png' >
+                    <label class="upload-profile-pic-button" for="img-crear">
+                        Adjunte aquí su foto de perfil
+                        <input class="input-usr-img" id="img-crear" type="file" name="img-usr" accept=".jpg, .png" onchange="PreviewImage()" multiple>
+                    </label>
+                </div>
+
                 <input class="input-texto" type="text" name="nombre" placeholder="Nombre/s y apellido/s"required/>
                 <input class="input-texto" type="text" name="user-name" placeholder="Nombre de usuario"required/>
                 <input class="input-texto" type="email" name="email" placeholder="Correo electrónico"required/>
@@ -95,9 +106,7 @@
                         <input type="checkbox" id="vida-sana" value="vida-sana">
                     </div>
                 </div>
-                <label class="label-header">Imagen de perfil:</label>
-                <div class="img-perfil">
-                    <input type="file" name="avatar" accept=".jpg, .png">
+
                 </div>
                 <input class="input-texto" type="password"  placeholder="Contraseña"required/>
                 <input class="input-texto" type="password"  placeholder="Confirmar contraseña"required/>
